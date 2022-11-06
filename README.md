@@ -59,7 +59,7 @@ Fig 1: A grid display of all 4 methods mentioned above; compared with the closed
 ### Objective 2:
 Gradient descent is an optimization algorithm that is used to find the minima of a function when they are difficult to solve analytically. In the question, the given function to minimize is:
 
-    ![](https://latex.codecogs.com/gif.latex?f%28x%2Cy%29%20%3D%20%28x%5E4&plus;y%5E4%29-%2821x%5E2&plus;13y%5E2%29&plus;2xy%28x&plus;y%29-%2814x&plus;22y%29&plus;170)
+     ![](https://latex.codecogs.com/gif.latex?f%28x%2Cy%29%20%3D%20%28x%5E4&plus;y%5E4%29-%2821x%5E2&plus;13y%5E2%29&plus;2xy%28x&plus;y%29-%2814x&plus;22y%29&plus;170)
       
 The way gradient descent works is as follows:
 - Start at a random point ‘w’ on the plane.

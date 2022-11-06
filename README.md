@@ -79,7 +79,16 @@ Fig 2: A plot of the given function along with the trajectories of the paths tak
 <img src="https://github.com/rud-ninja/Numerical_methods/blob/main/gradient_descent.jpg" alt="drawing" width="600"/>
 
 
+### Objective 3:
 
 Fig 3: Field direction and phase plot of the given dynamic systems.
 
 <img src="https://github.com/rud-ninja/Numerical_methods/blob/main/phase_plot.jpg" alt="drawing" width="1000"/>
+
+The above plot shows the field vector magnitude and direction in the given range along with eigenvectors plotted for each equilibria point.
+
+The thick dark arrows in the field direction plot represent the eigenvectors of the system at the equilibrium points (0,0) and (2,1). The eigenvectors and their associated eigenvalues scale and give shape to the field direction vectors. We can see the eigenvectors at (0,0) are orthogonal. The eigenvector at y=0 has eigenvalue 0 and hence everything on the line is 0. The eigenvector given by x=0 has eigenvalue - 1 therefore it mirrors the arrows on the line about the origin and shrinks them. Similarly, the point (2,1) has 2 eigenvectors. The one pointing to the right has a eigenvalue 1 + √2 and it expands the arrows in that direction by the same factor and the other one pointing left has eigenvalue 1 − √2 and so it shrinks the arrows. The eigenvectors at both the points affect the shape of the direction field and the eigenvalues affect the size of the direction vector.
+
+
+
+This work was originally part of the coursework for the my Master's degree in Data Science. For more detailed information regarding the objectives and/or terminologies, please click here.

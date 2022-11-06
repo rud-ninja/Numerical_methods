@@ -52,7 +52,7 @@ Numerical integration schemes are applied to ordinary differential equations oft
 
 Fig 1: A grid display of all 4 methods mentioned above; compared with the closed form solution of the given differential equation.
 
-<img src="https://github.com/rud-ninja/Numerical_methods/blob/main/cf_vs_nm.jpg" alt="drawing" width="800"/>
+<img src="https://github.com/rud-ninja/Numerical_methods/blob/main/cf_vs_nm.jpg" alt="drawing" width="1000"/>
 
 
 
@@ -76,7 +76,7 @@ The way gradient descent works is as follows:
 
 Fig 2: A plot of the given function along with the trajectories of the paths taken to find the minima points.
 
-<img src="https://github.com/rud-ninja/Numerical_methods/blob/main/gradient_descent.jpg" alt="drawing" width="600"/>
+<img src="https://github.com/rud-ninja/Numerical_methods/blob/main/gradient_descent.jpg" alt="drawing" width="900"/>
 
 
 ### Objective 3:
@@ -91,4 +91,4 @@ The thick dark arrows in the field direction plot represent the eigenvectors of 
 
 
 
-This work was originally part of the coursework for the my Master's degree in Data Science. For more detailed information regarding the objectives and/or terminologies, please click here.
+This work was originally part of the coursework for the my Master's degree in Data Science. For more detailed information regarding the objectives and/or terminologies, please read the [full report](https://github.com/rud-ninja/Numerical_methods/blob/main/numerical_methods/num_methods.pdf).

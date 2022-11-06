@@ -12,7 +12,7 @@ Pandas, NumPy, SciPy, Matplotlib
 
 ## Figures:
 Numerical integration schemes are applied to ordinary differential equations often when their closed-form solution is difficult to find or when the value of a definite integral needs to be estimated. There are multiple numerical integration techniques and below are described 4 of them:
-1. **Euler'smethod:** To apply Euler’s method of numerical integration, the initial conditions of the function must be known. In our question we have u(t=0) = 2. In Euler’s method, we start from the initial point and calculate the next point using the gradient of the function and a step size. Therefore, in the question, considering a step size h, we get;
+1. **Euler'smethod:** To apply Euler’s method of numerical integration, the initial conditions of the function must be known. In this case we have u(t=0) = 2. In Euler’s method, we start from the initial point and calculate the next point using the gradient of the function and a step size. Therefore, in the question, considering a step size h, we get;
 
       ![](https://latex.codecogs.com/gif.latex?t_%7Bi&plus;1%7D%20%3D%20t_%7Bi%7D%20&plus;%20h)
 
@@ -23,10 +23,22 @@ Numerical integration schemes are applied to ordinary differential equations oft
       ![](https://latex.codecogs.com/gif.latex?%5Cint_%7Ba%7D%5E%7Bb%7Du%28t%29dt%20%3D%20%5Csum_%7Bn%7D%5E%7B%7Du%28t%3Di_%7Bmidpt%7D%29.h)
 
 
-4. **Runge Kutta 2nd order:**
+4. **Runge Kutta 2nd order:** Similar to Euler’s Method, the Runge Kutta second order numerical method requires initial conditions of the ordinary differential equation. Starting from the initial value of u(t), it calculates the subsequent values using the weighted average of two gradients as following;
+
+      ![](https://latex.codecogs.com/gif.latex?t_%7Bi&plus;1%7D%20%3D%20t_i%20&plus;h)
+      ![](https://latex.codecogs.com/gif.latex?K_1%20%3D%20h%20*%20f%28t_i%2C%20u_i%29)
+      ![](https://latex.codecogs.com/gif.latex?K_2%20%3D%20h%20*%20f%5Cleft%20%28%20%5Cleft%20%28%20t_i%20&plus;%5Cfrac%7Bh%7D%7B2%7D%20%5Cright%20%29%2C%20%5Cleft%20%28%20u_i%20&plus;%20%5Cfrac%7BK_1*h%7D%7B2%7D%20%5Cright%20%29%20%5Cright%20%29)
+      ![](https://latex.codecogs.com/gif.latex?u_%7Bi&plus;1%7D%20%3D%20u_i%20&plus;%20K_2)
 
 
-6. **Runge Kutta 4th order:**
+6. **Runge Kutta 4th order:** Similar to Runge Kutta 2nd order, the 4th order takes weighted mean of 4 gradients to calculate the next value. The formulas are as below;
+
+      ![](https://latex.codecogs.com/gif.latex?t_%7Bi&plus;1%7D%20%3D%20t_i%20&plus;h)
+      ![](https://latex.codecogs.com/gif.latex?K_1%20%3D%20h%20*%20f%28t_i%2C%20u_i%29)
+      ![](https://latex.codecogs.com/gif.latex?K_2%20%3D%20h%20*%20f%5Cleft%20%28%20%5Cleft%20%28t_i&plus;%5Cfrac%7Bh%7D%7B2%7D%20%5Cright%20%29%2C%5Cleft%20%28u_i%20&plus;%20%5Cfrac%7BK_1%7D%7B2%7D%20%5Cright%20%29%20%5Cright%20%29)
+      ![](https://latex.codecogs.com/gif.latex?K_3%20%3D%20h%20*%20f%5Cleft%20%28%20%5Cleft%20%28t_i&plus;%5Cfrac%7Bh%7D%7B2%7D%20%5Cright%20%29%2C%5Cleft%20%28u_i%20&plus;%20%5Cfrac%7BK_2%7D%7B2%7D%20%5Cright%20%29%20%5Cright%20%29)
+      ![](https://latex.codecogs.com/gif.latex?K_4%20%3D%20h%20*%20f%28%28t_i&plus;h%29%2C%28u_i&plus;K_3%29%29)
+      ![](https://latex.codecogs.com/gif.latex?u_%7Bi&plus;1%7D%20%3D%20u_i%20&plus;%20%5Cfrac%7B1%7D%7B6%7D%28K_1%20&plus;2K_2&plus;2K_3&plus;K_4%29)
 
 
 Fig 1: A grid display of all 4 methods mentioned in objective 1 in comparison with the closed form solution of a given differential equation.

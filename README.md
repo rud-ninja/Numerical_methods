@@ -14,13 +14,13 @@ Pandas, NumPy, SciPy, Matplotlib
 Numerical integration schemes are applied to ordinary differential equations often when their closed-form solution is difficult to find or when the value of a definite integral needs to be estimated. There are multiple numerical integration techniques and below are described 4 of them:
 1. **Euler'smethod:** To apply Euler’s method of numerical integration, the initial conditions of the function must be known. In our question we have u(t=0) = 2. In Euler’s method, we start from the initial point and calculate the next point using the gradient of the function and a step size. Therefore, in the question, considering a step size h, we get;
 
-  * ![](https://latex.codecogs.com/gif.latex?t_%7Bi&plus;1%7D%20%3D%20t_%7Bi%7D%20&plus;%20h)
+      ![](https://latex.codecogs.com/gif.latex?t_%7Bi&plus;1%7D%20%3D%20t_%7Bi%7D%20&plus;%20h)
 
-  * ![](https://latex.codecogs.com/gif.latex?U_%7Bi&plus;1%7D%20%3D%20U_%7Bi%7D%20&plus;%20h.%5Cleft%20%28%20%5Cfrac%7BdU_%7Bi%7D%7D%7Bdt%7D%20%5Cright%20%29)
+      ![](https://latex.codecogs.com/gif.latex?U_%7Bi&plus;1%7D%20%3D%20U_%7Bi%7D%20&plus;%20h.%5Cleft%20%28%20%5Cfrac%7BdU_%7Bi%7D%7D%7Bdt%7D%20%5Cright%20%29)
 
 2. **Midpoint method:** The midpoint method is used to estimate the area under a curve if it is difficult to solve analytically. In this method, we divide the input range, say (a, b) into n equal segments where size of each segment ![](https://latex.codecogs.com/gif.latex?h%20%3D%20%5Cfrac%7B%28b-a%29%7D%7Bn%7D) is nothing but the step size. The value of the function is calculated at the midpoint of each segment i and eventually the estimation of the definite integral reduces to the sum of the area of the rectangles at each segment i with width equal to the step size h and height equal to ![](https://latex.codecogs.com/gif.latex?u%28t%20%3D%20i_%7Bmidpt%7D%29.)
 
-![](https://latex.codecogs.com/gif.latex?%5Cint_%7Ba%7D%5E%7Bb%7Du%28t%29dt%20%3D%20%5Csum_%7Bn%7D%5E%7B%7Du%28t%3Di_%7Bmidpt%7D%29.h)
+      ![](https://latex.codecogs.com/gif.latex?%5Cint_%7Ba%7D%5E%7Bb%7Du%28t%29dt%20%3D%20%5Csum_%7Bn%7D%5E%7B%7Du%28t%3Di_%7Bmidpt%7D%29.h)
 
 
 4. **Runge Kutta 2nd order:**

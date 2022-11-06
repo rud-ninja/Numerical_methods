@@ -26,18 +26,26 @@ Numerical integration schemes are applied to ordinary differential equations oft
 4. **Runge Kutta 2nd order:** Similar to Euler’s Method, the Runge Kutta second order numerical method requires initial conditions of the ordinary differential equation. Starting from the initial value of u(t), it calculates the subsequent values using the weighted average of two gradients as following;
 
       ![](https://latex.codecogs.com/gif.latex?t_%7Bi&plus;1%7D%20%3D%20t_i%20&plus;h)
+      
       ![](https://latex.codecogs.com/gif.latex?K_1%20%3D%20h%20*%20f%28t_i%2C%20u_i%29)
+      
       ![](https://latex.codecogs.com/gif.latex?K_2%20%3D%20h%20*%20f%5Cleft%20%28%20%5Cleft%20%28%20t_i%20&plus;%5Cfrac%7Bh%7D%7B2%7D%20%5Cright%20%29%2C%20%5Cleft%20%28%20u_i%20&plus;%20%5Cfrac%7BK_1*h%7D%7B2%7D%20%5Cright%20%29%20%5Cright%20%29)
+      
       ![](https://latex.codecogs.com/gif.latex?u_%7Bi&plus;1%7D%20%3D%20u_i%20&plus;%20K_2)
 
 
 6. **Runge Kutta 4th order:** Similar to Runge Kutta 2nd order, the 4th order takes weighted mean of 4 gradients to calculate the next value. The formulas are as below;
 
       ![](https://latex.codecogs.com/gif.latex?t_%7Bi&plus;1%7D%20%3D%20t_i%20&plus;h)
+      
       ![](https://latex.codecogs.com/gif.latex?K_1%20%3D%20h%20*%20f%28t_i%2C%20u_i%29)
+      
       ![](https://latex.codecogs.com/gif.latex?K_2%20%3D%20h%20*%20f%5Cleft%20%28%20%5Cleft%20%28t_i&plus;%5Cfrac%7Bh%7D%7B2%7D%20%5Cright%20%29%2C%5Cleft%20%28u_i%20&plus;%20%5Cfrac%7BK_1%7D%7B2%7D%20%5Cright%20%29%20%5Cright%20%29)
+      
       ![](https://latex.codecogs.com/gif.latex?K_3%20%3D%20h%20*%20f%5Cleft%20%28%20%5Cleft%20%28t_i&plus;%5Cfrac%7Bh%7D%7B2%7D%20%5Cright%20%29%2C%5Cleft%20%28u_i%20&plus;%20%5Cfrac%7BK_2%7D%7B2%7D%20%5Cright%20%29%20%5Cright%20%29)
+      
       ![](https://latex.codecogs.com/gif.latex?K_4%20%3D%20h%20*%20f%28%28t_i&plus;h%29%2C%28u_i&plus;K_3%29%29)
+      
       ![](https://latex.codecogs.com/gif.latex?u_%7Bi&plus;1%7D%20%3D%20u_i%20&plus;%20%5Cfrac%7B1%7D%7B6%7D%28K_1%20&plus;2K_2&plus;2K_3&plus;K_4%29)
 
 

@@ -1,9 +1,9 @@
 # Title: Numerical Methods
 
 ## Objectives:
-1. Test 4 different numerical algorithms with varying step sizes to estimate definite integrals, namely; Euler, Midpoint, Runge Kutta 2nd order and 4th order. Compare the solutions of the above to the closed form solution.
-2. Find the minima points of a given function (of order greater than 2) using gradient descent (optimisation algorithm)
-3. Analyse a given dynamic system.
+1. Tested 4 different numerical algorithms with varying step sizes to estimate definite integrals, namely; Euler, Midpoint, Runge Kutta 2nd order and 4th order. Compared the solutions of the above to the closed form solution.
+2. Found the minima points of a given function (of order greater than 2) using gradient descent.
+3. Analysed a given dynamic system.
 
 
 #### Libraries used:
